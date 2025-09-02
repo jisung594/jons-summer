@@ -1,0 +1,49 @@
+/* Main container for the header component */
+.header {
+    /* height: 80px; */
+
+    /* background: linear-gradient(135deg, rgb(255, 214, 58) 0%, rgb(186, 149, 0) 100%); */
+    /* background-color: #FFD63A; */
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    /* gap: 20px; */
+    gap: 1.5em;
+
+    padding: 8px 24px;
+
+
+    position: fixed;
+    top: 0;
+    /* left: 0; */
+    right: 0;
+    width: 100%;
+    z-index: 10;
+
+}
+
+nav a {
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 8px 24px;
+    /* color: #000000; */
+    color: #FFFFFF;
+}
+
+nav a:hover {
+    color: #FFD63A;
+}
+
+/* Overrides the color to black for the MiniUiKit page */
+.headerLight nav a {
+    color: #000000;
+}
+
+/* Overrides hover color for the light background */
+.headerLight nav a:hover {
+    color: #4D4D4D;
+}
