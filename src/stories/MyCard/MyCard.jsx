@@ -8,6 +8,7 @@ import { MyButton } from '../MyButton/MyButton';
  * Supports Vertical (expandable) and Horizontal layouts.
  */
 export const MyCard = ({
+  primary = false,
   variant = 'vertical', // 'vertical' or 'horizontal'
   title,
   secondaryText,
@@ -73,7 +74,7 @@ export const MyCard = ({
                     label={button.label}
                     onClick={button.onClick}
                     // TODO: pass 'variant' prop to MyButton for different button styles
-                    primary={true}
+                    primary={button.primary}
                 />
               ))}
             </div>
