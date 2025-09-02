@@ -55,7 +55,7 @@
 
 .toggleThumbOn {
   left: calc(50% - 2px);
-  background-color: #4FB6E5;
+  background-color: #FF9900;
 }
 
 .toggleLabelText {
@@ -120,7 +120,7 @@
 
 .toggleInput:checked + .toggleContainer {
   background-color: #EBEBEB;
-  border-color: #4FB6E5;
+  border-color: #FF9900;
 }
 
 .toggleInput:checked + .toggleContainer .toggleLabelText {
