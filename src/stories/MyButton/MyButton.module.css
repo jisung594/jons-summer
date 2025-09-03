@@ -1,57 +1,92 @@
 .button {
-  display: inline-block;
-  cursor: pointer;
-  border: 0;
-  font-family: 'Gilroy', sans-serif;
-  font-weight: 700;
-  /* line-height: 1;
-  letter-spacing: 0.1em; */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    border: 0;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    /* line-height: 1;
+    letter-spacing: 0.1em; */
+
+    white-space: normal;
+    box-sizing: border-box;
+
+
 }
+
 .button:active {
-  transform: scale(0.97);
+    transform: scale(0.97);
 }
+
 .primary {
-  box-shadow: rgba(0, 0, 0, 1) 0px 0px 0px 2px inset;
-  background-color: transparent;
-  color: #000000;
+    background-color: #FF9900;
+    color: white;
 }
+
 .primary:focus {
-  outline: 2px solid #006391;
-  outline-offset: 2px;
-  background-color: transparent;
+    outline: 2px solid #D27E00;
+    outline-offset: 2px;
+    /* background-color: transparent; */
 }
 
 .primary:hover {
-  box-shadow: none;
-  background-color: #4FB6E5;
-  color: white;
+    box-shadow: none;
+    background-color: #FFBD58;
+    color: white;
 }
+
 .primary:active {
-  background-color: #006391;
-  color: white;
+    background-color: #D27E00;
+    color: white;
 }
+
 .secondary {
-  background-color: red;
-  color: white;
+    box-shadow: rgba(0, 0, 0, 1) 0px 0px 0px 2px inset;
+    background-color: transparent;
+    color: #000000;
 }
+.secondary:focus {
+    outline: 2px solid #006391;
+    outline-offset: 2px;
+    background-color: transparent;
+}
+.secondary:hover {
+    box-shadow: none;
+    background-color: #4FB6E5;
+    color: white;
+}
+.secondary:active {
+    background-color: #006391;
+    color: white;
+}
+
+
+
+
+
+
+
 .small {
-  padding: 10px 16px;
-  font-size: 12px;
+    padding: 10px 16px;
+    font-size: 12px;
 }
 
 
 
 .medium {
-  height: 40px;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.08em;
-  padding: 8px 23.5px;
+    height: auto;
+    min-height: 40px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    padding: 8px 23.5px;
 }
 
 
 
 .large {
-  padding: 12px 24px;
-  font-size: 16px;
+    padding: 12px 24px;
+    font-size: 16px;
 }
