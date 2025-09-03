@@ -8,13 +8,14 @@ export const MyButton = ({
   // backgroundColor = null,
   size = 'medium',
   label,
+  className,
   ...props
 }) => {
   const mode = primary ? styles.primary : styles.secondary;
   return (
     <button
       type="button"
-      className={[styles.button, styles[size], mode].join(' ')}
+      className={[styles.button, styles[size], mode, className].join(' ')}
       // style={backgroundColor && { backgroundColor }}
       {...props}
     >
@@ -28,5 +29,6 @@ MyButton.propTypes = {
   // backgroundColor: PropTypes.string,
   size: PropTypes.oneOf(['small', 'medium', 'large']),
   label: PropTypes.string.isRequired,
+  className: PropTypes.string,
   onClick: PropTypes.func,
 };

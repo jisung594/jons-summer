@@ -1,9 +1,3 @@
-/*
- * ========================================
- * Responsive CSS for the Bio Component
- * ========================================
- */
-
 /* Main container for the bio component */
 .bioContainer {
     position: relative;
@@ -14,7 +8,7 @@
     background-color: #000000;
 }
 
-/* This is the container for all the fixed background images */
+/* Container for all the fixed background images */
 .imageBackgroundContainer {
     position: fixed;
     top: 0;
@@ -121,18 +115,18 @@
     }
 
     .bioSidebar {
-        left: 40px; /* Original position for larger screens */
-        gap: 16px; /* Original gap for larger screens */
+        left: 40px;
+        gap: 16px;
     }
 
     .scrollamaDot {
-        width: 12px; /* Original size for larger screens */
-        height: 12px; /* Original size for larger screens */
+        width: 12px;
+        height: 12px;
     }
 
     .textContent {
-        width: 50%; /* Original width for larger screens */
-        margin: 0; /* Remove auto-margin to restore original alignment */
+        width: 50%;
+        margin: 0;
     }
 
     .textContent span {
@@ -144,4 +138,8 @@
     .textContent p {
         font-size: clamp(16px, 2.5vw, 20px);
     }
+}
+
+.projectLinkCta {
+    width: fit-content !important;
 }

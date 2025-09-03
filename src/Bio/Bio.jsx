@@ -144,7 +144,12 @@ export const Bio = () => {
                   {
                     data.links && (
                       data.links.map((buttonItem, index) => (
-                        <MyButton key={index} primary={buttonItem.primary} label={buttonItem.label} />
+                        <MyButton 
+                          key={index} 
+                          primary={buttonItem.primary} 
+                          label={buttonItem.label} 
+                          className={styles.projectLinkCta} 
+                        />
                       ))
                     
                   )}
