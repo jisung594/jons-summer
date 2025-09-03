@@ -45,6 +45,7 @@
 }
 
 .comboboxInput::placeholder {
+    font-weight: 400;
     color: #999999;
     opacity: 1;
 }
