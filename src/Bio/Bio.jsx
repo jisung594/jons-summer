@@ -65,16 +65,16 @@ const stepData = [
   },
   {
     paragraph: "This opportunity did give me a clearer headspace to re-evaluate my personal goals, including those as a web developer. I've always looked to work my background in graphic design into my dev work where I can, so I decided to build a mini component library as a fun personal project / portfolio piece. I used Figma to design my components and Storybook to build and style them.",
-    background: '#000000',
+    background: '#38A3A5',
     imageUrl: null,
   },
   {
     title: null,
     paragraph: null,
     links: [
-      {primary: true, label: 'DEMO'},
-      {primary: false, label: 'FIGMA'},
-      {primary: false, label: 'STORYBOOK'}
+      { primary: true, label: 'DEMO', href: 'https://www.jonjichoi.com/miniuikit' },
+      { primary: false, label: 'FIGMA', href: 'https://www.figma.com/design/iUEUiDkx3jtnYPtJyTNjjE/Mini-Component-Library?node-id=490-189' },
+      { primary: false, label: 'STORYBOOK', href: 'https://www.storybook.com/example' }
     ],
     background: '#f1f1f1',
     imageUrl: null,
@@ -82,7 +82,7 @@ const stepData = [
   {
     title: "thank you :)",
     paragraph: null,
-    background: '#38A3A5',
+    background: '#f1f1f1',
     imageUrl: null,
   },
 ];
@@ -138,7 +138,7 @@ export const Bio = () => {
                   minHeight: data.imageUrl ? '200vh' : '100vh',
                 }}
               >
-                <div className={styles.textContent}>
+                <div className={`${styles.textContent} ${data.links && styles.projectLinkStep}`}>
                   {data.title && <span>{data.title}</span>}
                   {data.paragraph && <p>{data.paragraph}</p>}
                   {
@@ -149,9 +149,9 @@ export const Bio = () => {
                           primary={buttonItem.primary} 
                           label={buttonItem.label} 
                           className={styles.projectLinkCta} 
+                          href={buttonItem.href}
                         />
                       ))
-                    
                   )}
                 </div>
               </div>
