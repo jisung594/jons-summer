@@ -11,8 +11,12 @@ export const Footer = ({
 
         <div className={styles.footerContent}>
             <div className={styles.socialMediaWrapper}>
+              <a href="https://www.linkedin.com/in/jonathanchoi594">
                 <img src={'../../images/social/linkedin.png'} alt={'LinkedIn icon'} />
+              </a>
+              <a href="https://github.com/jisung594">
                 <img src={'../../images/social/github.png'} alt={'Github icon'} />
+              </a>
             </div>
             <div className={styles.contactInfoWrapper}>
                 <label>CONTACT</label>
