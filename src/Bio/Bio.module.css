@@ -140,6 +140,14 @@
     }
 }
 
+/* Overrides for textContent wrapper when links present */
+.projectLinkStep {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Overrides for button instances on homepage */
 .projectLinkCta {
-    width: fit-content !important;
+    width: fit-content;
 }
