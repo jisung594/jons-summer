@@ -9,18 +9,21 @@ export const MyButton = ({
   size = 'medium',
   label,
   className,
+  href,
   ...props
 }) => {
   const mode = primary ? styles.primary : styles.secondary;
   return (
-    <button
-      type="button"
-      className={[styles.button, styles[size], mode, className].join(' ')}
-      // style={backgroundColor && { backgroundColor }}
-      {...props}
-    >
-      {label}
-    </button>
+    <a href={href}>
+      <button
+        type="button"
+        className={[styles.button, styles[size], mode, className].join(' ')}
+        // style={backgroundColor && { backgroundColor }}
+        {...props}
+      >
+        {label}
+      </button>
+    </a>
   );
 };
 
@@ -30,5 +33,6 @@ MyButton.propTypes = {
   size: PropTypes.oneOf(['small', 'medium', 'large']),
   label: PropTypes.string.isRequired,
   className: PropTypes.string,
+  href: PropTypes.string,
   onClick: PropTypes.func,
 };
