@@ -12,8 +12,6 @@
 
     white-space: normal;
     box-sizing: border-box;
-
-
 }
 
 .button:active {
@@ -62,7 +60,10 @@
     color: white;
 }
 
-
+.disabled {
+    background-color: #EBEBEB;
+    color: #4D4D4D;
+}
 
 
 
@@ -73,8 +74,6 @@
     font-size: 12px;
 }
 
-
-
 .medium {
     height: auto;
     min-height: 40px;
@@ -83,8 +82,6 @@
     letter-spacing: 0.08em;
     padding: 8px 23.5px;
 }
-
-
 
 .large {
     padding: 12px 24px;
