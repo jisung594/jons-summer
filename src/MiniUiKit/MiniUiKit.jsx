@@ -127,7 +127,7 @@ export const MiniUiKit = ({ ...props }) => {
             title={'Jonathan Choi'}
             secondaryText={'Web Developer'}
             bodyText={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida vestibulum ante vel pulvinar.'}
-            imageUrl={'../images/jona.jpeg'}
+            imageUrl={`${process.env.PUBLIC_URL}/images/jona.jpeg`}
             imageAlt={'Guy holding double thumbs up by Lake Michigan'}
             ctaButtons={[
               { primary: false, label: 'CTA #1', onClick: () => handleButtonClick('Card CTA 1') },
