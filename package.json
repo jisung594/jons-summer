@@ -1,7 +1,7 @@
 {
   "name": "mini-component-library",
   "version": "0.1.0",
-  "homepage": " https://jisung594.github.io/mini-component-library",
+  "homepage": "https://jisung594.github.io/mini-component-library",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
