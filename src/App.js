@@ -38,7 +38,7 @@ function App() {
   // const isMiniUiKitPage = location.pathname === '/mini-ui-kit';
 
   return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
           <AppContent />
       </BrowserRouter>
   );

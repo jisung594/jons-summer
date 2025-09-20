@@ -37,13 +37,13 @@ const stepData = [
     title: "country loaf",
     paragraph: null,
     background: 'transparent',
-    imageUrl: '../images/boule_portrait.jpeg',
+    imageUrl: `${process.env.PUBLIC_URL}/images/country_loaf.jpeg`,
   },
   {
-    title: "painting an old bookshelf green",
+    title: "a rusty barstool & an old coffee table",
     paragraph: null,
     background: 'transparent',
-    imageUrl: '../images/painting_furniture.jpeg',
+    imageUrl: `${process.env.PUBLIC_URL}/images/painting_yellow.jpeg`,
   },
   {
     paragraph: "tending to our patio garden and taking my dog on longer walks",
@@ -55,13 +55,13 @@ const stepData = [
     title: "basil, mint, moonflowers, morning glories, nasturtiums, scotch bonnet peppers, sunflowers, tomatillos, tomatoes, and zinnias",
     paragraph: null,
     background: 'transparent',
-    imageUrl: '../images/patio.jpeg',
+    imageUrl: `${process.env.PUBLIC_URL}/images/patio.jpeg`,
   },
   {
     title: "Eddie likes chicken and french fries (and most foods, except fruits + vegetables)",
     paragraph: null,
     background: 'transparent',
-    imageUrl: '../images/eddie.jpeg',
+    imageUrl: `${process.env.PUBLIC_URL}/images/eddie.jpeg`,
   },
   {
     paragraph: "This opportunity did give me a clearer headspace to re-evaluate my personal goals, including those as a web developer. I've always looked to work my background in graphic design into my dev work where I can, so I decided to build a mini component library as a fun personal project / portfolio piece. I used Figma to design my components and Storybook to build and style them.",
