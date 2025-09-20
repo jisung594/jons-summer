@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/mini-component-library/static/css/main.980cfae8.css",
-    "main.js": "/mini-component-library/static/js/main.4d59a493.js",
+    "main.css": "/mini-component-library/static/css/main.97d84870.css",
+    "main.js": "/mini-component-library/static/js/main.d12fcb3d.js",
     "static/js/453.9dbb2e39.chunk.js": "/mini-component-library/static/js/453.9dbb2e39.chunk.js",
     "static/media/Gilroy-Bold.woff": "/mini-component-library/static/media/Gilroy-Bold.29e8a00a2523137109fc.woff",
     "index.html": "/mini-component-library/index.html",
-    "main.980cfae8.css.map": "/mini-component-library/static/css/main.980cfae8.css.map",
-    "main.4d59a493.js.map": "/mini-component-library/static/js/main.4d59a493.js.map",
+    "main.97d84870.css.map": "/mini-component-library/static/css/main.97d84870.css.map",
+    "main.d12fcb3d.js.map": "/mini-component-library/static/js/main.d12fcb3d.js.map",
     "453.9dbb2e39.chunk.js.map": "/mini-component-library/static/js/453.9dbb2e39.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.980cfae8.css",
-    "static/js/main.4d59a493.js"
+    "static/css/main.97d84870.css",
+    "static/js/main.d12fcb3d.js"
   ]
 }
