@@ -82,7 +82,7 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-    width: 90%; /* Adjusted width for mobile */
+    width: 80%; /* Adjusted width for mobile */
     margin: 0 auto; /* Center the content on mobile */
     position: relative;
     z-index: 1;
