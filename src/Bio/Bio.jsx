@@ -37,13 +37,13 @@ const stepData = [
     title: "country loaf",
     paragraph: null,
     background: 'transparent',
-    imageUrl: `${process.env.PUBLIC_URL}/images/boule_portrait.jpeg`,
+    imageUrl: `${process.env.PUBLIC_URL}/images/country_loaf.jpeg`,
   },
   {
-    title: "painting an old bookshelf green",
+    title: "a rusty barstool & an old coffee table",
     paragraph: null,
     background: 'transparent',
-    imageUrl: `${process.env.PUBLIC_URL}/images/painting_furniture.jpeg`,
+    imageUrl: `${process.env.PUBLIC_URL}/images/painting_yellow.jpeg`,
   },
   {
     paragraph: "tending to our patio garden and taking my dog on longer walks",
