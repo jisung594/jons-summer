@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { Bio } from './Bio/Bio.jsx';
 import { MiniUiKit } from './MiniUiKit/MiniUiKit.jsx';
@@ -8,10 +8,12 @@ import styles from './App.module.css';
 
 
 const AppContent = () => {
-  // Get the current location object
   const location = useLocation();
-  // Check if the current pathname is '/mini-ui-kit'
   const isMiniUiKitPage = location.pathname === '/mini-ui-kit';
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <div className="App">
@@ -30,13 +32,6 @@ const AppContent = () => {
 
 
 function App() {
-  // // const [currentPage, setCurrentPage] = useState('home');
-      
-  // // Get the current location object
-  // const location = useLocation();
-  // // Check if the current pathname is '/mini-ui-kit'
-  // const isMiniUiKitPage = location.pathname === '/mini-ui-kit';
-
   return (
       <BrowserRouter basename={process.env.PUBLIC_URL}>
           <AppContent />
