@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/jons-summer/static/css/main.5b87503e.css",
-    "main.js": "/jons-summer/static/js/main.f40d44a1.js",
-    "static/js/453.9dbb2e39.chunk.js": "/jons-summer/static/js/453.9dbb2e39.chunk.js",
-    "static/media/Gilroy-Bold.woff": "/jons-summer/static/media/Gilroy-Bold.29e8a00a2523137109fc.woff",
-    "index.html": "/jons-summer/index.html",
-    "main.5b87503e.css.map": "/jons-summer/static/css/main.5b87503e.css.map",
-    "main.f40d44a1.js.map": "/jons-summer/static/js/main.f40d44a1.js.map",
-    "453.9dbb2e39.chunk.js.map": "/jons-summer/static/js/453.9dbb2e39.chunk.js.map"
+    "main.css": "/static/css/main.74ed0d77.css",
+    "main.js": "/static/js/main.cdcf2b6f.js",
+    "static/js/453.9dbb2e39.chunk.js": "/static/js/453.9dbb2e39.chunk.js",
+    "static/media/Gilroy-Bold.woff": "/static/media/Gilroy-Bold.29e8a00a2523137109fc.woff",
+    "index.html": "/index.html",
+    "main.74ed0d77.css.map": "/static/css/main.74ed0d77.css.map",
+    "main.cdcf2b6f.js.map": "/static/js/main.cdcf2b6f.js.map",
+    "453.9dbb2e39.chunk.js.map": "/static/js/453.9dbb2e39.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b87503e.css",
-    "static/js/main.f40d44a1.js"
+    "static/css/main.74ed0d77.css",
+    "static/js/main.cdcf2b6f.js"
   ]
 }
