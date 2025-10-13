@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-
 import styles from './MyButton.module.css';
+import { Link } from 'react-router-dom';
 
 /** Primary UI component for user interaction */
 export const MyButton = ({
@@ -13,8 +13,9 @@ export const MyButton = ({
   ...props
 }) => {
   const mode = primary ? styles.primary : styles.secondary;
+
   return (
-    <a href={href}>
+    <Link to={href} >
       <button
         type="button"
         className={[styles.button, styles[size], mode, className].join(' ')}
@@ -23,9 +24,9 @@ export const MyButton = ({
       >
         {label}
       </button>
-    </a>
+    </Link>
   );
-};
+}
 
 MyButton.propTypes = {
   primary: PropTypes.bool,
