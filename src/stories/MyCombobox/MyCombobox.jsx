@@ -139,11 +139,8 @@ export const MyCombobox = ({
       }
     }
   };
-
-  // placeholder or selected value
-  const displayValue = selectedValue ? selectedValue : (inputValue || placeholder);
-
-  // classes for input, based on selected state
+  
+  // Classes for input, based on selected state
   const inputClasses = `${styles.comboboxInput} ${selectedValue ? styles.comboboxInputSelected : ''}`;
 
   return (
@@ -153,14 +150,13 @@ export const MyCombobox = ({
           {label}
         </label>
       )}
-
       <div className={styles.inputContainer}>
         <input
           id="combobox-input"
           type="text"
           className={inputClasses}
-          value={selectedValue ? selectedValue : ''} // Actual value for input
-          placeholder={selectedValue ? '' : placeholder} // Only shows placeholder if not selected
+          value={selectedValue ? selectedValue : ''}
+          placeholder={selectedValue ? '' : placeholder}
           readOnly
           onClick={handleToggleDropdown}
           onKeyDown={handleKeyDown}

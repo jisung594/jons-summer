@@ -3,33 +3,24 @@ import { Scrollama, Step } from 'react-scrollama';
 import styles from './Bio.module.css';
 import { MyButton } from '../stories/MyButton/MyButton';
 
-// This is the data array for the scrolling steps, based on your content.
 const stepData = [
   {
     paragraph: "Hi, my name is Jon.",
-    // background: '#22577A',
     background: '#000000',
-    // background: 'linear-gradient(45deg, rgba(24, 28, 20, 1) 0%, rgba(60, 61, 55, 1) 100%)',
-    // background: 'conic-gradient(from 90deg, #22577A, #38A3A5)',
-  
     imageUrl: null,
   },
   {
     paragraph: "Due to federal budget cuts earlier in the year, the company I had worked at for about four years was affected and I was laid off. They're a one-of-a-kind company with an amazing culture, and I owe a lot of my growth during the past couple of years to them.",
-    // background: '#22577A',
     background: '#000000',
-    // background: 'linear-gradient(-45deg, rgba(34, 87, 122, 1) 0%, rgba(20, 50, 70, 1) 100%)',
     imageUrl: null,
   },
   {
     paragraph: "Surprisingly enough, I am wholeheartedly enjoying my funemployment. I've been...",
-    // background: '#22577A',
     background: '#000000',
     imageUrl: null,
   },
   {
     paragraph: "learning to bake loaves of bread and paint furniture",
-    // background: '#22577A',
     background: '#000000',
     imageUrl: null,
   },
@@ -47,7 +38,6 @@ const stepData = [
   },
   {
     paragraph: "tending to our patio garden and taking my dog on longer walks",
-    // background: '#22577A',
     background: '#000000',
     imageUrl: null,
   },
@@ -90,7 +80,6 @@ const stepData = [
 export const Bio = () => {
   const [currentStep, setCurrentStep] = useState(0);
 
-  // This function is called by Scrollama when a step enters the viewport.
   const onStepEnter = ({ data }) => {
     setCurrentStep(data);
   };

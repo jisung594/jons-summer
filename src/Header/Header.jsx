@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './Header.module.css';
 
 export const Header = ({
   isMiniUiKitPage
 }) => {
-
   const headerClass = isMiniUiKitPage ? styles.headerLight : styles.headerDark;
   
   return (

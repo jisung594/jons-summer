@@ -2,10 +2,9 @@ import PropTypes from 'prop-types';
 import styles from './MyButton.module.css';
 import { Link } from 'react-router-dom';
 
-/** Primary UI component for user interaction */
+/** Primary UI component for button */
 export const MyButton = ({
   primary = false,
-  // backgroundColor = null,
   size = 'medium',
   label,
   className,
@@ -19,7 +18,6 @@ export const MyButton = ({
       <button
         type="button"
         className={[styles.button, styles[size], mode, className].join(' ')}
-        // style={backgroundColor && { backgroundColor }}
         {...props}
       >
         {label}
@@ -30,7 +28,6 @@ export const MyButton = ({
 
 MyButton.propTypes = {
   primary: PropTypes.bool,
-  // backgroundColor: PropTypes.string,
   size: PropTypes.oneOf(['small', 'medium', 'large']),
   label: PropTypes.string.isRequired,
   className: PropTypes.string,
