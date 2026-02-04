@@ -4,6 +4,7 @@ const stepData = [
   {
     paragraph: "Recent projects:",
     background: '#f1f1f1',
+    darkmode: false,
     imageUrl: null,
   },
   {
@@ -19,6 +20,7 @@ const stepData = [
       { primary: true, label: "BAKER'S LOGBOOK", href: 'https://bakers-logbook.web.app/' }
     ],
     background: '#f1f1f1',
+    darkmode: false,
     imageUrl: null,
   },
   {
@@ -32,12 +34,7 @@ const stepData = [
       { primary: false, label: 'STORYBOOK', href: 'https://www.storybook.com/example' }
     ],
     background: '#f1f1f1',
-    imageUrl: null,
-  },
-  {
-    title: "thank you :)",
-    paragraph: null,
-    background: '#f1f1f1',
+    darkmode: false,
     imageUrl: null,
   },
 ];

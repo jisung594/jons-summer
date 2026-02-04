@@ -50,10 +50,14 @@ export const ScrollytellingStory = ({ storySteps }) => {
                 className={styles.fullHeightStep}
                 style={{ 
                   background: data.background,
+                  color: data.darkmode ? '#f1f1f1' : '#000000',
                   minHeight: data.imageUrl ? '200vh' : '100vh',
                 }}
               >
-                <div className={`${styles.textContent} ${data.links && styles.projectLinkStep}`}>
+                <div className={`
+                  ${data.links && styles.projectLinkStep}
+                  ${styles.textContent}
+                `}>
                   {data.title && <span>{data.title}</span>}
                   {data.paragraph && <p>{data.paragraph}</p>}
                   {
