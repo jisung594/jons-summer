@@ -10,8 +10,21 @@ export const Header = ({
   return (
     <div className={`${styles.header} ${headerClass}`}>
       <nav>
-        <NavLink to="/" className={styles.navLink} activeClassName={styles.activeLink}>HOME</NavLink>
-        <NavLink to="/mini-ui-kit" className={styles.navLink} activeClassName={styles.activeLink}>MINI UI KIT</NavLink>
+        <NavLink 
+          to="/" 
+          className={styles.navLink} 
+          activeClassName={styles.activeLink}
+        >HOME</NavLink>
+        <NavLink 
+          to="/about" 
+          className={styles.navLink} 
+          activeClassName={styles.activeLink}
+        >ABOUT</NavLink>
+        <NavLink 
+          to="/2025" 
+          className={styles.navLink} 
+          activeClassName={styles.activeLink}
+        >2025 (archived)</NavLink>
       </nav>
     </div>
   );
