@@ -1,7 +1,4 @@
-import React, { useState } from 'react';
-import { Scrollama, Step } from 'react-scrollama';
-import styles from './Bio.module.css';
-import { MyButton } from '../stories/MyButton/MyButton';
+import { ScrollytellingStory } from '../ScrollytellingStory/ScrollytellingStory';
 
 const stepData = [
   {
@@ -78,78 +75,7 @@ const stepData = [
 ];
 
 export const Bio = () => {
-  const [currentStep, setCurrentStep] = useState(0);
-
-  const onStepEnter = ({ data }) => {
-    setCurrentStep(data);
-  };
-
-  return (
-    <div className={styles.bioContainer}>
-      {/* Sidebar with dot navigation */}
-      <div className={styles.bioSidebar}>
-        {stepData.map((_, i) => (
-          <div
-            key={i}
-            className={`${styles.scrollamaDot} ${currentStep === i ? styles.activeDot : ''}`}
-          />
-        ))}
-      </div>
-
-      {/* Holds fixed background images. */}
-      <div className={styles.imageBackgroundContainer}>
-        {stepData.map((data, i) => (
-          <img
-            key={i}
-            src={data.imageUrl || null} // Use an empty string if no image URL is provided
-            alt={data.title || ''}
-            className={`${styles.scrollytellingImageFixed} ${currentStep === i && data.imageUrl ? styles.scrollytellingImageActive : ''}`}
-            onError={(e) => {
-              e.target.onerror = null;
-              e.target.src = 'https://placehold.co/1920x1080/d7c4b0/000000?text=Error';
-            }}
-          />
-        ))}
-      </div>
-
-      {/* Main Scrollama wrapper for text content */}
-      <div className={styles.bioTextSections}>
-        <Scrollama
-          onStepEnter={onStepEnter}
-          offset={0.1} // Triggers when step is at 10% of the viewport height
-        >
-          {stepData.map((data, i) => (
-            <Step key={i} data={i}>
-              <div
-                className={styles.fullHeightStep}
-                style={{ 
-                  background: data.background,
-                  minHeight: data.imageUrl ? '200vh' : '100vh',
-                }}
-              >
-                <div className={`${styles.textContent} ${data.links && styles.projectLinkStep}`}>
-                  {data.title && <span>{data.title}</span>}
-                  {data.paragraph && <p>{data.paragraph}</p>}
-                  {
-                    data.links && (
-                      data.links.map((buttonItem, index) => (
-                        <MyButton 
-                          key={index} 
-                          primary={buttonItem.primary} 
-                          label={buttonItem.label} 
-                          className={styles.projectLinkCta} 
-                          href={buttonItem.href}
-                        />
-                      ))
-                  )}
-                </div>
-              </div>
-            </Step>
-          ))}
-        </Scrollama>
-      </div>
-    </div>
-  );
+  return <ScrollytellingStory storySteps={stepData} />;
 };
 
 export default Bio;
