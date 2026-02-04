@@ -1,15 +1,14 @@
 .storyContainer {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    /* z-index: -2; */
-    z-index: 0;
-    background-color: #000000;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  /* z-index: -2; */
+  z-index: 0;
+  background-color: #000000;
 }
 
 .projectStep {
   display: flex;
-  /* flex-direction: column; */
 }
 
 /* Container for all the fixed background images */
@@ -53,7 +52,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px; /* Adjusted padding for mobile */
+  padding: 20px;
   box-sizing: border-box;
   background-color: transparent;
 }
@@ -62,43 +61,43 @@
 .storySidebar {
   position: fixed;
   top: 50%;
-  left: 20px; /* Adjusted position for mobile */
+  left: 20px;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  gap: 12px; /* Adjusted gap for mobile */
+  gap: 12px;
   z-index: 2;
 }
 
 .scrollamaDot {
-  width: 10px; /* Adjusted size for mobile */
-  height: 10px; /* Adjusted size for mobile */
+  width: 10px;
+  height: 10px;
   background-color: #e0e0e0;
   border-radius: 50%;
   transition: background-color 0.6s ease-in-out;
 }
 
 .activeDot {
-  background-color: #FFD63A;
+  background-color: #1591EA;
 }
 
 .textContent {
   display: flex;
   flex-direction: column;
   text-align: left;
-  width: 80%; /* Adjusted width for mobile */
+  width: 80%;
   margin: 0 auto; /* Center the content on mobile */
   position: relative;
   z-index: 1;
-  /* color: #FFFFFF; */
 }
 
 .textContent span {
   font-size: clamp(18px, 4vw, 24px); /* Adjusted clamp values for better mobile scaling */
   font-weight: 700;
   margin-bottom: 0.5rem; /* Adjusted margin */
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 8px 12px; /* Adjusted padding */
+  background-color: #000000;
+  color: #f1f1f1;
+  padding: 8px 12px;
   width: fit-content;
 }
 
@@ -114,34 +113,34 @@
  * ========================================
  */
 @media (min-width: 769px) {
-    .fullHeightStep {
-      padding: 160px; /* Original padding for larger screens */
-    }
+  .fullHeightStep {
+    padding: 160px; /* Original padding for larger screens */
+  }
 
-    .bioSidebar {
-      left: 40px;
-      gap: 16px;
-    }
+  .bioSidebar {
+    left: 40px;
+    gap: 16px;
+  }
 
-    .scrollamaDot {
-      width: 12px;
-      height: 12px;
-    }
+  .scrollamaDot {
+    width: 12px;
+    height: 12px;
+  }
 
-    .textContent {
-      width: 50%;
-      margin: 0;
-    }
+  .textContent {
+    width: 50%;
+    margin: 0;
+  }
 
-    .textContent span {
-      font-size: clamp(20px, 3.5vw, 16px);
-      margin-bottom: 1rem;
-      padding: 12px 16px;
-    }
+  .textContent span {
+    font-size: clamp(20px, 3.5vw, 16px);
+    margin-bottom: 1rem;
+    padding: 12px 16px;
+  }
 
-    .textContent p {
-      font-size: clamp(16px, 2.5vw, 20px);
-    }
+  .textContent p {
+    font-size: clamp(16px, 2.5vw, 20px);
+  }
 }
 
 /* Overrides for textContent wrapper when links present */
