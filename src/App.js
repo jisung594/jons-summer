@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { Home } from './Home/Home.jsx';
 import { Bio } from './Bio/Bio.jsx';
 import { MiniUiKit } from './MiniUiKit/MiniUiKit.jsx';
 import { Header } from './Header/Header.jsx';
@@ -21,7 +22,8 @@ const AppContent = () => {
       <Header isMiniUiKitPage={isMiniUiKitPage} />
 
       <Routes>
-        <Route path="/" element={<Bio />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/2025" element={<Bio />} />
         <Route path="/mini-ui-kit" element={<MiniUiKit />} />
       </Routes>
       
@@ -32,9 +34,9 @@ const AppContent = () => {
 
 function App() {
   return (
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
-          <AppContent />
-      </BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <AppContent />
+    </BrowserRouter>
   );
 }
 
