@@ -1,14 +1,5 @@
 /* Main container for the header component */
 .header {
-  background-color: #FFFFFF;
-}
-
-nav {
-  display: flex;
-  justify-content: end;
-  gap: 1.5em;
-  padding: 1em 2em;
-
   position: fixed;
   top: 0;
   right: 0;
@@ -16,24 +7,40 @@ nav {
   z-index: 10;
 }
 
-nav a {
-  font-size: 14px;
-  font-weight: 700;
-  text-decoration: none;
-  padding: 1em 2em;
-  color: #000000;
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--space-xl) var(--space-2xl);
 }
 
-nav a:hover {
+.navLink {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  font-weight: 400;
+  text-decoration: none;
+  color: #000000;
+  padding: var(--space-md);
+}
+
+.navLink:hover {
   color: #1591EA;
 }
 
 /* Overrides the color to black for the MiniUiKit page */
-.headerLight nav a {
+.headerLight .navLink {
   color: #000000;
 }
 
 /* Overrides hover color for the light background */
-.headerLight nav a:hover {
+.headerLight .navLink:hover {
   color: #4D4D4D;
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+  nav {
+    justify-content: end;
+    gap: var(--space-2xl);
+  }
 }
