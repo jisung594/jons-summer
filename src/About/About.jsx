@@ -2,7 +2,7 @@ import styles from './About.module.css';
 
 export const About = ({ ...props }) => {
   return (
-    <div className={styles.about}>
+    <div className={`${styles.about} ${styles.fullHeight}`}>
       <div className={styles.header}>
         <h1>ABOUT</h1>
       </div>
