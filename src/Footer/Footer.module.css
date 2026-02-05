@@ -1,82 +1,83 @@
-/*
- * ========================================
- * Responsive CSS for the Footer
- * ========================================
- */
-
 .footer {
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    color: #FFFFFF;
-    background-color: #000000;
-    /* Adjusted padding for smaller screens */
-    padding: 2rem 20px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  color: #FFFFFF;
+  background-color: #000000;
+  padding: var(--space-lg) var(--space-2xl);
 }
 
 .footerContent {
-    display: flex;
-    max-width: 80rem;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    /* Adjusted gap for better spacing on mobile */
-    gap: 1.5rem;
-    width: 100%;
-    /* On mobile, items will stack. On desktop, they will be spaced out. */
-    justify-content: flex-start;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  width: 100%;
 }
 
 .contactInfoWrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
 }
 
 .contactInfoWrapper label {
-    font-size: 12px;
-    font-weight: 900;
-    color: #FFD63A;
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  letter-spacing: var(--space-xs);
+  color: var(--color-accent);
 }
 
 .contactInfo {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .contactInfo a {
-    font-size: 14px;
-    text-decoration: none;
-    color: #FFFFFF;
+  font-size: var(--text-lg);
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 .socialMediaWrapper {
-    display: flex;
-    gap: 0.5em;
+  display: flex;
+  gap: var(--space-sm);
 }
 
 .socialMediaWrapper img {
-    filter: invert(100%);
-    width: 3rem;
-    height: 3rem;
-    transition: transform 0.2s ease-in-out;
+  filter: invert(100%);
+  width: 3rem;
+  height: 3rem;
+  transition: transform 0.2s ease-in-out;
 }
 
-.copyrightWrapper p {
-    margin: 0;
+.copyrightWrapper {
+  font-family: var(--font-heading);
+  font-size: var(--text-sm);
+  letter-spacing: 0.1rem;
+  padding: var(--space-sm);
+  /* width: 100%; */
 }
 
-/*
- * ========================================
- * Desktop-specific styles using a media query
- * ========================================
- */
+/* Desktop styles */
 @media (min-width: 769px) {
-    .footer {
-        padding: 3rem 160px; /* Original padding for larger screens */
-    }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: var(--space-lg) var(--space-4xl);
+  }
 
-    .footerContent {
-        gap: 2rem; /* Original gap for larger screens */
-        /* justify-content: space-between; */
-    }
+  .footerContent {
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--space-xl);
+  }
+
+  .copyrightWrapper {
+    
+  }
 }

@@ -14,5 +14,13 @@
   font-size: var(--text-lg);
   font-weight: var(--font-normal);
   line-height: var(--space-xl);
-  width: 60%;
+  width: 50%;
+}
+
+.fullHeight {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
 }
