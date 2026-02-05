@@ -26,14 +26,14 @@ const stepData = [
     imageUrl: null,
   },
   {
-    title: "country loaf",
+    caption: "country loaf",
     paragraph: null,
     background: 'transparent',
     darkmode: true,
     imageUrl: `${process.env.PUBLIC_URL}/images/country_loaf.jpeg`,
   },
   {
-    title: "a rusty barstool & an old coffee table",
+    caption: "a rusty barstool & an old coffee table",
     paragraph: null,
     background: 'transparent',
     darkmode: true,
@@ -46,14 +46,14 @@ const stepData = [
     imageUrl: null,
   },
   {
-    title: "basil, mint, moonflowers, morning glories, nasturtiums, scotch bonnet peppers, sunflowers, tomatillos, tomatoes, and zinnias",
+    caption: "basil, mint, moonflowers, morning glories, nasturtiums, scotch bonnet peppers, sunflowers, tomatillos, tomatoes, and zinnias",
     paragraph: null,
     background: 'transparent',
     darkmode: true,
     imageUrl: `${process.env.PUBLIC_URL}/images/patio.jpeg`,
   },
   {
-    title: "Eddie likes chicken and french fries (and most foods, except fruits + vegetables)",
+    caption: "Eddie likes chicken and french fries (and most foods, except fruits + vegetables)",
     paragraph: null,
     background: 'transparent',
     darkmode: true,
@@ -66,7 +66,7 @@ const stepData = [
     imageUrl: null,
   },
   {
-    title: null,
+    caption: null,
     paragraph: null,
     links: [
       { primary: true, label: 'DEMO', href: '/mini-ui-kit' },
@@ -78,7 +78,7 @@ const stepData = [
     imageUrl: null,
   },
   {
-    title: "thank you :)",
+    caption: "thank you :)",
     paragraph: null,
     background: '#f1f1f1',
     darkmode: true,
