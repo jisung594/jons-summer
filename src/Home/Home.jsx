@@ -1,14 +1,17 @@
 import { ScrollytellingStory } from '../ScrollytellingStory/ScrollytellingStory';
+import styles from './Home.module.css';
 
 const stepData = [
   {
-    paragraph: "Recent projects:",
+    heading: 'Recent projects:',
+    caption: '',
+    paragraph: '',
     background: '#f1f1f1',
     darkmode: false,
     imageUrl: null,
   },
   {
-    title: null,
+    caption: null,
     paragraph: `Baker's Logbook is a personal recipe-tracking application built to support 
       iteration, organization, and refinement over time. After working professionally with React
       for the past couple of years, I chose Angular and Tailwind CSS for this project to 
@@ -24,7 +27,7 @@ const stepData = [
     imageUrl: null,
   },
   {
-    title: null,
+    caption: null,
     paragraph: `Mini UI Kit is a small component library I designed and built to experiment with 
       combining my skill sets in frontend development and graphic design. Components were designed 
       in Figma and implemented in React, with Storybook used as a development and documentation environment.`,
