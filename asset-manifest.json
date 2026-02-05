@@ -1,20 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.cba18ac2.css",
-    "main.js": "/static/js/main.c67ee970.js",
+    "main.css": "/static/css/main.18178e90.css",
+    "main.js": "/static/js/main.18ac0030.js",
     "static/js/453.9dbb2e39.chunk.js": "/static/js/453.9dbb2e39.chunk.js",
-    "static/media/Gilroy-Medium.woff": "/static/media/Gilroy-Medium.3a98bbb5a6e14bbe2c27.woff",
-    "static/media/Gilroy-Light.woff": "/static/media/Gilroy-Light.f08220ccb95672d5c176.woff",
-    "static/media/Gilroy-Regular.woff": "/static/media/Gilroy-Regular.de88caa6b67b3d321011.woff",
-    "static/media/Gilroy-Bold.woff": "/static/media/Gilroy-Bold.29e8a00a2523137109fc.woff",
+    "static/media/Archivo-Regular.woff": "/static/media/Archivo-Regular.476dbbdad277a2a045d2.woff",
     "static/media/Oswald-Regular.woff": "/static/media/Oswald-Regular.8a9fd1e7d8cd389e4483.woff",
     "index.html": "/index.html",
-    "main.cba18ac2.css.map": "/static/css/main.cba18ac2.css.map",
-    "main.c67ee970.js.map": "/static/js/main.c67ee970.js.map",
+    "main.18178e90.css.map": "/static/css/main.18178e90.css.map",
+    "main.18ac0030.js.map": "/static/js/main.18ac0030.js.map",
     "453.9dbb2e39.chunk.js.map": "/static/js/453.9dbb2e39.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cba18ac2.css",
-    "static/js/main.c67ee970.js"
+    "static/css/main.18178e90.css",
+    "static/js/main.18ac0030.js"
   ]
 }
