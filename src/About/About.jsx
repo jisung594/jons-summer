@@ -4,7 +4,7 @@ export const About = ({ ...props }) => {
   return (
     <div className={styles.about}>
       <div className={styles.header}>
-        <h1>About</h1>
+        <h1>ABOUT</h1>
       </div>
       <div className={styles.content}>
         <p>

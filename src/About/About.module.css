@@ -1,14 +1,18 @@
 .about {
-  padding: 8em 8em;
+  padding: var(--space-6xl);
 }
 
 .header {
-  font-size: 1em;
-  font-weight: lighter;
-  margin-bottom: 4em;
+  font-family: var(--font-heading);
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  margin-bottom: var(--space-xl);
 }
 
 .content {
-  font-size: 2em;
-  line-height: 1.5em;
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  font-weight: var(--font-normal);
+  line-height: var(--space-xl);
+  width: 60%;
 }
