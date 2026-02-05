@@ -8,10 +8,9 @@ export const About = ({ ...props }) => {
       </div>
       <div className={styles.content}>
         <p>
-          lorem ipsum dolor sit amet lorem ipsum dolor sit amet
-          lorem ipsum dolor sit amet lorem ipsum dolor sit amet
-          lorem ipsum dolor sit amet lorem ipsum dolor sit amet
-          lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+          I'm a frontend developer focused on translating design into real, usable software. 
+          I value patience and attention to detail, and I'm drawn to building interfaces 
+          that feel intuitive and human.
         </p>
       </div>
     </div>
