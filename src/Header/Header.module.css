@@ -5,19 +5,20 @@
   right: 0;
   width: 100%;
   z-index: 10;
+  background-color: var(--color-background);
+  mask-image: linear-gradient(to bottom, #000000 90%, transparent 100%);
 }
 
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: var(--space-xl) var(--space-2xl);
+  padding: var(--space-md) var(--space-xl);
 }
 
 .navLink {
   font-family: var(--font-heading);
   font-size: var(--text-lg);
-  font-weight: 400;
   text-decoration: none;
   color: #000000;
   padding: var(--space-md);
