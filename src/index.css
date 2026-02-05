@@ -24,7 +24,7 @@
 
   /* Font families */
   --font-heading: 'Oswald', sans-serif;
-  --font-body: 'Gilroy', sans-serif;
+  --font-body: 'Archivo', serif;
 
   /* Font weights */
   --font-normal: 400;
@@ -41,7 +41,7 @@
 
 body {
   margin: 0;
-  font-family: 'Gilroy', 'Oswald', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Oswald', 'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
