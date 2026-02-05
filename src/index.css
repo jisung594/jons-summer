@@ -35,10 +35,10 @@
 
   /* Colors */
   --color-primary: #1591EA;
+  --color-accent: #FF9900;
   --color-background: #000000;
   --color-text: #f1f1f1;
 }
-
 
 body {
   margin: 0;
