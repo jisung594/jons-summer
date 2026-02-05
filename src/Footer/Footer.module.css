@@ -4,62 +4,67 @@
   gap: var(--space-sm);
   color: #FFFFFF;
   background-color: #000000;
-  padding: var(--space-lg) var(--space-2xl);
+  padding: var(--space-lg) var(--space-xl);
 }
 
-.footerContent {
+.footerMain {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  gap: var(--space-sm);
-  width: 100%;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-lg);
 }
 
-.contactInfoWrapper {
+.contactInfoSection {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
+  border-right: 0.1em solid #FFFFFF;
+  padding-right: var(--space-lg);
 }
 
-.contactInfoWrapper label {
+.contactInfoSection label {
   font-family: var(--font-heading);
-  font-size: var(--text-lg);
+  font-size: var(--text-sm);
   font-weight: var(--font-semibold);
   letter-spacing: var(--space-xs);
-  color: var(--color-accent);
 }
 
 .contactInfo {
   display: flex;
   flex-direction: column;
+  font-family: var(--font-body);
+  font-size: var(--text-md);
 }
 
 .contactInfo a {
-  font-size: var(--text-lg);
   text-decoration: none;
   color: #FFFFFF;
 }
 
-.socialMediaWrapper {
+.socialMediaSection {
   display: flex;
+  align-items: center;
   gap: var(--space-sm);
 }
 
-.socialMediaWrapper img {
+.socialMediaSection img {
   filter: invert(100%);
   width: 3rem;
   height: 3rem;
   transition: transform 0.2s ease-in-out;
 }
 
-.copyrightWrapper {
+.footerCopyright {
+  display: flex;
+  align-items: flex-end;
+
   font-family: var(--font-heading);
   font-size: var(--text-sm);
   letter-spacing: 0.1rem;
-  padding: var(--space-sm);
-  /* width: 100%; */
+}
+
+.footerCopyrightText {
+  margin: 0;
 }
 
 /* Desktop styles */
@@ -68,16 +73,17 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: var(--space-lg) var(--space-4xl);
+    padding: var(--space-xl) var(--space-4xl);
   }
 
-  .footerContent {
+  .footerMain {
     justify-content: flex-start;
     align-items: center;
     gap: var(--space-xl);
+    margin-bottom: 0;
   }
 
-  .copyrightWrapper {
-    
+  .contactInfo {
+    font-size: var(--text-lg);
   }
 }
