@@ -3,7 +3,6 @@
 }
 
 .header {
-  /* font-family: ; */
   font-size: 1em;
   font-weight: lighter;
   margin-bottom: 4em;
@@ -11,5 +10,5 @@
 
 .content {
   font-size: 2em;
-  
+  line-height: 1.5em;
 }
