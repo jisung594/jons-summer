@@ -58,7 +58,8 @@ export const ScrollytellingStory = ({ storySteps }) => {
                   ${data.links && styles.projectLinkStep}
                   ${styles.textContent}
                 `}>
-                  {data.title && <span>{data.title}</span>}
+                  {data.heading && <h1>{data.heading}</h1>}
+                  {data.caption && <span>{data.caption}</span>}
                   {data.paragraph && <p>{data.paragraph}</p>}
                   {
                     data.links && (
