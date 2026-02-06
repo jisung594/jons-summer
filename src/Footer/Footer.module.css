@@ -22,16 +22,18 @@
   padding-right: var(--space-lg);
 }
 
-.contactInfoSection label {
+.contactInfoSection span {
   font-family: var(--font-heading);
   font-size: var(--text-sm);
   font-weight: var(--font-semibold);
   letter-spacing: var(--space-xs);
+  margin-bottom: var(--space-sm);
 }
 
 .contactInfo {
   display: flex;
   flex-direction: column;
+  gap: var(--space-sm);
   font-family: var(--font-body);
   font-size: var(--text-md);
 }

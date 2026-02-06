@@ -6,7 +6,7 @@ export const Footer = ({}) => {
     <div className={styles.footer}>
       <div className={styles.footerMain}>
         <div className={styles.contactInfoSection}>
-          <label>CONTACT</label>
+          <span>CONTACT</span>
           <div className={styles.contactInfo}>
             <a href="mailto:your.email@example.com">jonjichoi@gmail.com</a>
             <a href='tel:+19786044087'>(978) 604-4087</a>
