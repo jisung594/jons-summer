@@ -3,16 +3,34 @@ import styles from './About.module.css';
 export const About = ({ ...props }) => {
   return (
     <div className={`${styles.about} ${styles.fullHeight}`}>
-      <div className={styles.header}>
-        <h1 className={styles.headerTitle}>Hi, my name is Jon.</h1>
+      <div className={styles.experience}>
+        <h1 className={styles.experienceTitle}>Professional Experience</h1>
+        <ul className={styles.experienceList}>
+          <li>React</li>
+          <li>JavaScript</li>
+          <li>Drupal</li>
+          <li>PHP</li>
+          <li>HTML/CSS</li>
+          <li>Cypress</li>
+          <li>Figma</li>
+          <li>Storybook</li>
+        </ul>
       </div>
-      <div className={styles.content}>
-        <p>
-          I'm a frontend developer focused on translating design into real, usable software. 
-          I value patience and attention to detail, and I'm drawn to building interfaces 
-          that feel intuitive and human.
-        </p>
+      <div className={styles.tools}>
+        <h1 className={styles.toolsTitle}>Current Tools</h1>
+        <ul className={styles.toolsList}>
+          <li>Angular</li>
+          <li>Typescript</li>
+          <li>Tailwind CSS</li>
+          <li>Firebase</li>
+        </ul>
+        {/* <div className={styles.content}>
+          <p>
+            lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+          </p>
+        </div> */}
       </div>
+
     </div>
   )
 }
