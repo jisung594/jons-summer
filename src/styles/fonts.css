@@ -1,6 +1,14 @@
 @font-face {
-  font-family: 'Archivo';
-  src: url('../stories/assets/fonts/Archivo-Regular.woff') format('woff');
+  font-family: 'Archivo-Light';
+  src: url('../stories/assets/fonts/Archivo-Light.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Archivo-Regular';
+  src: url('../stories/assets/fonts/Archivo-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
