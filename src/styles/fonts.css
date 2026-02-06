@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Archivo-Light';
+  font-family: 'Archivo';
   src: url('../stories/assets/fonts/archivo-light-webfont.woff2') format('woff2'), /* Super Modern Browsers */
        url('../stories/assets/fonts/archivo-light-webfont.woff') format('woff'), /* Pretty Modern Browsers */
        url('../stories/assets/fonts/archivo-light-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
@@ -10,7 +10,7 @@
 }
 
 @font-face {
-  font-family: 'Archivo-Regular';
+  font-family: 'Archivo';
   src: url('../stories/assets/fonts/archivo-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
        url('../stories/assets/fonts/archivo-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
        url('../stories/assets/fonts/archivo-regular-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
