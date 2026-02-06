@@ -3,7 +3,7 @@
 }
 
 .experience {
-  margin-bottom: var(--space-lg)
+  margin-bottom: var(--space-xl)
 }
 
 .experienceTitle, .toolsTitle {
@@ -12,6 +12,12 @@
   font-weight: var(--font-normal);
   border-bottom: 1px solid var(--color-text);
   width: fit-content;
+  margin-bottom: var(--space-lg);
+}
+
+.experienceList {
+  display: flex;
+  gap: var(--space-4xl);
 }
 
 .experienceList, .toolsList {
@@ -19,6 +25,12 @@
   font-family: var(--font-body);
   font-size: var(--text-lg);
   padding: 0;
+}
+
+.experienceListCol {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
 }
 
 .fullHeight {
@@ -34,9 +46,5 @@
 @media (min-width: 769px) {
   .about {
     padding: var(--space-6xl);
-  }
-
-  .content {
-    width: 50%;
   }
 }
