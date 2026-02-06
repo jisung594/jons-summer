@@ -3,8 +3,19 @@ import styles from './Home.module.css';
 
 const stepData = [
   {
-    heading: 'Recent projects:',
-    caption: '',
+    heading: 'Hi! My name is Jon.',
+    caption: null,
+    paragraph: `I'm a frontend developer focused on translating design into real, usable software. 
+      I value patience and attention to detail, and I'm drawn to building interfaces that feel 
+      intuitive and human.`,
+    background: '#f1f1f1',
+    darkmode: false,
+    imageUrl: null,
+  },
+  {
+    caption: `*Just an fyi -- due to my previous role supporting public sector clients over the last four years, 
+      much of my work resides in internal company codebases and remains confidential. Nonetheless, please feel free to browse
+      some of my recent projects below:`,
     paragraph: '',
     background: '#f1f1f1',
     darkmode: false,
@@ -30,7 +41,7 @@ const stepData = [
     caption: null,
     paragraph: `Mini UI Kit is a small component library I designed and built to experiment with 
       combining my skill sets in frontend development and graphic design. Components were designed 
-      in Figma and implemented in React, with Storybook used as a development and documentation environment.`,
+      in Figma and implemented in React, with Storybook used as a dev / documentation environment.`,
     links: [
       { primary: true, label: 'DEMO', href: '/mini-ui-kit' },
       { primary: false, label: 'FIGMA', href: 'https://www.figma.com/design/iUEUiDkx3jtnYPtJyTNjjE/Mini-Component-Library?node-id=490-189' },
