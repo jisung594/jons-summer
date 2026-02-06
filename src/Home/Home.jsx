@@ -4,7 +4,6 @@ import styles from './Home.module.css';
 const stepData = [
   {
     heading: 'Hi! My name is Jon.',
-    caption: null,
     paragraph: `I'm a frontend developer focused on translating design into real, usable software. 
       I value patience and attention to detail, and I'm drawn to building interfaces that feel 
       intuitive and human.`,
@@ -22,8 +21,8 @@ const stepData = [
     imageUrl: null,
   },
   {
-    caption: null,
-    paragraph: `Baker's Logbook is a personal recipe-tracking application built to support 
+    heading: "Baker's Logbook",
+    paragraph: `A personal recipe-tracking application built to support 
       iteration, organization, and refinement over time. After working professionally with React
       for the past couple of years, I chose Angular and Tailwind CSS for this project to 
       step outside my comfort zone and explore a different frontend ecosystem. Most importantly, 
@@ -38,8 +37,8 @@ const stepData = [
     imageUrl: null,
   },
   {
-    caption: null,
-    paragraph: `Mini UI Kit is a small component library I designed and built to experiment with 
+    heading: 'Mini UI Kit',
+    paragraph: `A small component library I designed and built to experiment with 
       combining my skill sets in frontend development and graphic design. Components were designed 
       in Figma and implemented in React, with Storybook used as a dev / documentation environment.`,
     links: [
