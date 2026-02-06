@@ -6,7 +6,7 @@
   width: 100%;
   z-index: 10;
   background-color: var(--color-background);
-  mask-image: linear-gradient(to bottom, #000000 90%, transparent 100%);
+  box-shadow: 0 2px 4px 0 #f1f1f1;
 }
 
 nav {

@@ -24,7 +24,7 @@ export const Header = ({
           to="/2025" 
           className={styles.navLink} 
           activeClassName={styles.activeLink}
-        >2025 (archived)</NavLink>
+        >2025</NavLink>
       </nav>
     </div>
   );
