@@ -1,14 +1,18 @@
 @font-face {
   font-family: 'Archivo-Light';
-  src: url('../stories/assets/fonts/Archivo-Light.woff2') format('woff2');
-  font-weight: 700;
+  src: url('../stories/assets/fonts/Archivo-Light.woff2') format('woff2'),  /* Super Modern Browsers */
+       url('../stories/assets/fonts/Archivo-Light.woff') format('woff'),    /* Pretty Modern Browsers */
+       url('../stories/assets/fonts/Archivo-Light.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Archivo-Regular';
-  src: url('../stories/assets/fonts/Archivo-Regular.woff2') format('woff2');
+  src: url('../stories/assets/fonts/Archivo-Regular.woff2') format('woff2'),  /* Super Modern Browsers */
+       url('../stories/assets/fonts/Archivo-Regular.woff') format('woff'),    /* Pretty Modern Browsers */
+       url('../stories/assets/fonts/Archivo-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
   font-weight: 400;
   font-style: normal;
   font-display: swap;
