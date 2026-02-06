@@ -1,12 +1,52 @@
 .about {
+  margin-top: 4rem;
   padding: var(--space-2xl);
 }
 
-.experience {
-  margin-bottom: var(--space-xl)
+.fullHeight {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-xl);
+  box-sizing: border-box;
+  background-color: var(--color-background);
 }
 
-.experienceTitle, .toolsTitle {
+.generalInfo {
+  font-family: var(--font-body);
+  font-size: var(--text-xl);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.location {
+  margin-bottom: var(--space-lg);
+}
+
+.location, .preferences {
+  display: flex;
+  flex-direction: row;
+}
+
+.location p, .preferences p {
+  font-size: var(--text-md);
+  font-weight: var(--font-light);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin: 0;
+}
+
+.location span, .preferences span {
+  display: flex;
+  font-size: var(--text-lg);
+  font-weight: var(--font-normal);
+}
+
+.generalTitle, .experienceTitle, .toolsTitle {
   font-family: var(--font-heading);
   font-size: var(--text-2xl);
   font-weight: var(--font-normal);
@@ -17,13 +57,15 @@
 
 .experienceList {
   display: flex;
-  gap: var(--space-4xl);
+  flex-direction: column;
+  gap: var(--space-sm);
 }
 
 .experienceList, .toolsList {
   list-style-type: none;
   font-family: var(--font-body);
   font-size: var(--text-lg);
+  margin: 0;
   padding: 0;
 }
 
@@ -33,18 +75,14 @@
   gap: var(--space-sm);
 }
 
-.fullHeight {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  box-sizing: border-box;
-  background-color: var(--color-background);
-}
-
 /* Desktop styles */
 @media (min-width: 769px) {
   .about {
-    padding: var(--space-6xl);
+    padding: var(--space-2xl) var(--space-6xl);
+  }
+
+  .experienceList {
+    flex-direction: row;
+    gap: var(--space-4xl);
   }
 }
