@@ -6,12 +6,11 @@ import { Bio } from './Bio/Bio.jsx';
 import { MiniUiKit } from './MiniUiKit/MiniUiKit.jsx';
 import { Header } from './Header/Header.jsx';
 import { Footer } from './Footer/Footer.jsx';
-import styles from './App.module.css';
 
 
 const AppContent = () => {
   const location = useLocation();
-  const isMiniUiKitPage = location.pathname === '/mini-ui-kit';
+  const currentLocation = location.pathname;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -19,16 +18,13 @@ const AppContent = () => {
 
   return (
     <div className="App">
-      {/* Pass the boolean prop to the Header component */}
-      <Header isMiniUiKitPage={isMiniUiKitPage} />
-
+      <Header currentLocation={currentLocation} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/2025" element={<Bio />} />
         <Route path="/mini-ui-kit" element={<MiniUiKit />} />
       </Routes>
-      
       <Footer />
     </div>
   );
