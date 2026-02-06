@@ -3,6 +3,21 @@ import styles from './About.module.css';
 export const About = ({ ...props }) => {
   return (
     <div className={`${styles.about} ${styles.fullHeight}`}>
+      <div className={styles.generalInfo}>
+        <h1 className={styles.generalTitle}>General</h1>
+        <div className={styles.location}>
+          <p>Location:
+            <span>Chicago, IL</span>
+          </p>
+        </div>
+        <div className={styles.preferences}>
+          <p>Open to:
+            <span>Remote, Hybrid</span>
+            <span>Full-time, Part-time, Freelance</span>
+          </p>
+        </div>
+      </div>
+
       <div className={styles.experience}>
         <h1 className={styles.experienceTitle}>Professional Experience</h1>
         <ul className={styles.experienceList}>
@@ -37,7 +52,6 @@ export const About = ({ ...props }) => {
           </div>
         </ul>
       </div>
-
     </div>
   )
 }
