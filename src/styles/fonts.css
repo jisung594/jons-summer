@@ -1,8 +1,9 @@
 @font-face {
   font-family: 'Archivo-Light';
-  src: url('../stories/assets/fonts/Archivo-Light.woff2') format('woff2'),  /* Super Modern Browsers */
-       url('../stories/assets/fonts/Archivo-Light.woff') format('woff'),    /* Pretty Modern Browsers */
-       url('../stories/assets/fonts/Archivo-Light.ttf') format('truetype'); /* Safari, Android, iOS */
+  src: url('../stories/assets/fonts/archivo-light-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../stories/assets/fonts/archivo-light-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../stories/assets/fonts/archivo-light-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../stories/assets/fonts/archivo-light-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -10,9 +11,10 @@
 
 @font-face {
   font-family: 'Archivo-Regular';
-  src: url('../stories/assets/fonts/Archivo-Regular.woff2') format('woff2'),  /* Super Modern Browsers */
-       url('../stories/assets/fonts/Archivo-Regular.woff') format('woff'),    /* Pretty Modern Browsers */
-       url('../stories/assets/fonts/Archivo-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+  src: url('../stories/assets/fonts/archivo-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../stories/assets/fonts/archivo-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../stories/assets/fonts/archivo-regular-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../stories/assets/fonts/archivo-regular-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
   font-weight: 400;
   font-style: normal;
   font-display: swap;
