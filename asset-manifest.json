@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.72caa5ac.css",
-    "main.js": "/static/js/main.3ce02098.js",
+    "main.css": "/static/css/main.52579ede.css",
+    "main.js": "/static/js/main.c2371d30.js",
     "static/js/453.9dbb2e39.chunk.js": "/static/js/453.9dbb2e39.chunk.js",
     "static/media/archivo-light-webfont.svg": "/static/media/archivo-light-webfont.7041d11ac1068e5e730a.svg",
     "static/media/archivo-regular-webfont.svg": "/static/media/archivo-regular-webfont.9e3f2ae3dcd5370eb3c7.svg",
     "static/media/archivo-light-webfont.ttf": "/static/media/archivo-light-webfont.1b07e9704c1b3887e468.ttf",
     "static/media/archivo-regular-webfont.ttf": "/static/media/archivo-regular-webfont.72e2ac46752cd549224f.ttf",
+    "static/media/logo_main.png": "/static/media/logo_main.676df61a3dc4b44a53cf.png",
     "static/media/archivo-light-webfont.woff": "/static/media/archivo-light-webfont.9a9a53849b36a7c920f9.woff",
     "static/media/archivo-regular-webfont.woff": "/static/media/archivo-regular-webfont.f9fa7c331e7c1e655c44.woff",
     "static/media/Oswald-Regular.woff": "/static/media/Oswald-Regular.8a9fd1e7d8cd389e4483.woff",
     "static/media/archivo-light-webfont.woff2": "/static/media/archivo-light-webfont.4d0b389e0ea0dd5bb350.woff2",
     "static/media/archivo-regular-webfont.woff2": "/static/media/archivo-regular-webfont.6795d52d4c60240408d6.woff2",
     "index.html": "/index.html",
-    "main.72caa5ac.css.map": "/static/css/main.72caa5ac.css.map",
-    "main.3ce02098.js.map": "/static/js/main.3ce02098.js.map",
+    "main.52579ede.css.map": "/static/css/main.52579ede.css.map",
+    "main.c2371d30.js.map": "/static/js/main.c2371d30.js.map",
     "453.9dbb2e39.chunk.js.map": "/static/js/453.9dbb2e39.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.72caa5ac.css",
-    "static/js/main.3ce02098.js"
+    "static/css/main.52579ede.css",
+    "static/js/main.c2371d30.js"
   ]
 }
