@@ -5,6 +5,17 @@
   width: 100%;
   z-index: 10;
   background-color: var(--color-background);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  display: none; /* TODO: Update when hamburger menu is implemented  */
+
+  height: var(--space-xl);
+  padding: var(--space-xl) var(--space-2xl);
 }
 
 .headerLightShadow {
@@ -49,5 +60,9 @@ nav {
   nav {
     justify-content: end;
     gap: var(--space-2xl);
+  }
+
+  .logo {
+    display: flex;
   }
 }
