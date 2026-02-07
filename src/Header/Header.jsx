@@ -1,78 +1,53 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLocation, NavLink } from 'react-router-dom';
 import styles from './Header.module.css';
-import logo from '../assets/logo_main.png';
+import logoUrl from '../assets/logo_main.png';
 import iconHamburger from '../assets/icon_hamburger.png';
 import iconClose from '../assets/icon_close.png';
 
 export const Header = () => {
-  const [ menuOpen, toggleMenu ] = useState(false);
-
+  const [ menuOpen, setMenuOpen ] = useState(false);
   const location = useLocation();
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location.pathname]); // Close menu on route change
+
   const headerShadowClass = location.pathname === '/2025' 
     ? styles.headerDarkShadow
     : styles.headerLightShadow;
 
-  const closeMenu = () => {
-    toggleMenu(false);
-  }
-
   return (
-    <div className={`
-      ${styles.header} 
-      ${headerShadowClass}
-      ${menuOpen && styles.fullHeight}
-    `}>
-      <div className={`${menuOpen && styles.displayNone} ${styles.logo}`}>
-        <img src={logo} alt="Site logo" />
+    <div className={`${styles.header} ${headerShadowClass}`}>
+      <div className={styles.logo}>
+        <NavLink to="/">
+          <img src={logoUrl} alt="Site logo" />
+        </NavLink>
+        
       </div>
-      <button 
-        className={`${menuOpen && styles.displayNone} ${styles.menuButton}`} 
-        onClick={() => toggleMenu(!menuOpen)}
-      >
-        <img src={iconHamburger} alt="Hamburger menu icon" />
-      </button>
-
+      {/* Desktop nav */}
       <nav className={styles.navDesktop}>
         <NavLink to="/" className={styles.navLink}>HOME</NavLink>
         <NavLink to="/about" className={styles.navLink}>ABOUT</NavLink>
         <NavLink to="/2025" className={styles.navLink}>2025</NavLink>
       </nav>
+      <button 
+        className={styles.menuButton} 
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label={menuOpen ? "Close menu" : "Open menu"}
+        aria-expanded={menuOpen}
+      >
+        <img src={menuOpen ? iconClose : iconHamburger} alt="" />
+      </button>
 
-      {/* Open nav menu on small screens */}
-      <div className={`${menuOpen ? styles.displayMenu : styles.displayNone}`}>
-        <div className={styles.menuHeader}>
-          <div className={styles.logo}>
-            <img src={logo} alt="Site logo" />
-          </div>
-          <div className={styles.button}>
-            <button 
-              className={styles.menuButton} 
-              onClick={() => toggleMenu(!menuOpen)}
-            >
-              <img src={iconClose} alt="Close icon" />
-            </button>
-          </div>
+      {/* Mobile nav */}
+        <div className={`${styles.mobileMenuOverlay} ${menuOpen ? styles.mobileMenuOpen : ''}`}>
+          <nav className={styles.navMobile}>
+            <NavLink to="/" className={styles.navLink}>HOME</NavLink>
+            <NavLink to="/about" className={styles.navLink}>ABOUT</NavLink>
+            <NavLink to="/2025" className={styles.navLink}>2025</NavLink>
+          </nav>
         </div>
-
-        <nav className={styles.navMobile}>
-          <NavLink 
-            to="/"
-            onClick={closeMenu} 
-            className={styles.navLink}
-          >HOME</NavLink>
-          <NavLink 
-            to="/about"
-            onClick={closeMenu} 
-            className={styles.navLink}
-          >ABOUT</NavLink>
-          <NavLink 
-            to="/2025"
-            onClick={closeMenu} 
-            className={styles.navLink}
-          >2025</NavLink>
-        </nav>
-      </div>
     </div>
   );
 }

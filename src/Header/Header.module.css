@@ -5,28 +5,9 @@
   width: 100%;
   z-index: 5;
   background-color: var(--color-background);
-
   display: flex;
-  /* flex-direction: row; */
   justify-content: space-between;
   align-items: center;
-}
-
-.fullHeight {
-  height: 100%;
-  background-color: var(--color-background);
-}
-
-.menuHeader {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  display: flex;
-  height: var(--space-xl);
-  padding: var(--space-xl) var(--space-2xl);
 }
 
 .headerLightShadow {
@@ -37,31 +18,64 @@
   box-shadow: 0 12px 64px 0 #00000031;
 }
 
-.closeButton, .menuButton {
+.logo {
+  display: flex;
+  /* height: var(--space-xl); */
+  padding: var(--space-xl) var(--space-xl);
+  z-index: 20;
+}
+
+.logo:hover {
+  opacity: 0.5;
+}
+
+.logo img {
+  height: var(--space-xl);
+}
+
+.menuButton {
   height: fit-content;
   border: 0;
-  padding: var(--space-lg);
+  padding: var(--space-xl) var(--space-xl);
+  background: transparent;
+  cursor: pointer;
+  z-index: 20;
 }
 
-.closeButton img, .menuButton img {
-  height: var(--space-lg);
+.menuButton img {
+  height: var(--space-md);
 }
 
-.displayMenu {
+/* Mobile overlay */
+.mobileMenuOverlay {
   position: fixed;
-  inset: 0; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-background);
   z-index: 10;
+  
+  /* hidden by default */
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(100%);
+  transition: transform 0.6s ease-in-out;
 }
 
-.displayNone {
-  display: none;
+.mobileMenuOpen {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
 }
 
 .navMobile {
   display: flex;
   flex-direction: column;
+  align-items: start;
   gap: var(--space-xl);
-  padding: var(--space-2xl);
+  padding: var(--space-3xl);
+  margin-top: var(--space-4xl);
 }
 
 .navDesktop {
@@ -98,21 +112,16 @@ nav {
 
 /* Desktop styles */
 @media (min-width: 769px) {
-  .menuButton {
-    display: none;
-  }
-
-  .navMobile {
+  .menuButton,
+  .mobileMenuOverlay {
     display: none;
   }
 
   .navDesktop {
     display: flex;
-  }
-
-  nav {
-    justify-content: end;
+    /* justify-content: end; */
     gap: var(--space-2xl);
+    padding: var(--space-md) var(--space-xl);
   }
 
   .navLink {
