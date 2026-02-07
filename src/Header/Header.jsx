@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocation, NavLink } from 'react-router-dom';
 import styles from './Header.module.css';
+import logo from '../logo_main.png';
 
 export const Header = ({
   isMiniUiKitPage
@@ -12,6 +13,7 @@ export const Header = ({
 
   return (
     <div className={`${styles.header} ${headerShadowClass}`}>
+      <img className={styles.logo} src={logo} alt="Site logo" />
       <nav>
         <NavLink 
           to="/" 
